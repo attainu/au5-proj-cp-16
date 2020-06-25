@@ -9,30 +9,114 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+      animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
+  padding: 10px;
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.user-form {
+  width: 600px;
+  /* align-content: center; */
+  margin-left: 350px;
+  margin-top: 10px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.seller {
+  font-size: 30px;
+  color: aliceblue;
+  margin-left: 170px;
+  padding-bottom: 30px;
+}
+
+.tablePage {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* You can set flex-wrap and
+  flex-direction individually */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Or do it all in one line
+ with flex flow */
+  flex-flow: row wrap;
+  /* tweak where items line
+  up on the row
+  valid values are: flex-start,
+  flex-end, space-between,
+  space-around, stretch */
+  align-content: flex-end;
+}
+
+.cartPage {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+b {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inputPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  border: 2px solid;
+  margin: 5px;
+  padding: 10px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttonPage button {
+  font-size: 40px;
+}
+
+.buttonPage {
+  padding: 10px;
+  margin: 10px;
+}
+
+.input {
+  width: 25%;
+  border: 2px solid;
+  margin: 2px;
+  padding: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
