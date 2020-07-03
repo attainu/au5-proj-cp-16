@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const path = require('path')
 const cors = require('cors')
 const user = require('./controllers/user')
 const post = require('./controllers/post')
@@ -8,6 +9,7 @@ const PORT=8080;
 
 app.use(cors())
 app.use(express.json())
+
 
 // CRUD operations for users table
 
@@ -38,7 +40,8 @@ if (process.env.NODE_ENV === "production"){
     app.get('/*',(req,res)=>{
         res.sendFile(path.join(__dirname+'/build/index.html'));
     })
-} 
+}
+
 
 
 module.exports = app
