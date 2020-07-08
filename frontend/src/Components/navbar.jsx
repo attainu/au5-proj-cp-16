@@ -63,7 +63,7 @@ class Navbar extends Component {
                     <Link to="/explore">Explore</Link> */}
                      {!this.props.loggedInUser && (
                         <Link to="/signup">Sign-Up</Link>
-                    )}
+                    )}Socially
                     <Link to="/login">Log-In</Link>
                 </div>
                 <div>
